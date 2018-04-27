@@ -1,0 +1,58 @@
+@import "../../../assets/less/color";
+
+.ant-tabs {
+  overflow: visible;
+}
+
+.card-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  background-color: @card-color;
+  border-left: 5px solid @noborder-color;
+  box-shadow: 0 1px 2px @card-shadow-color;
+
+  &.active {
+    border-left: solid 5px @active-color;
+  }
+  .circle {
+    position: absolute;
+    left: 10px;
+    top: 32px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    &.red {
+      background-color: @warning-color;
+    }
+    &.blue {
+      background-color: @primary-color;
+    }
+  }
+  .card-desc {
+    position: absolute;
+    right: 25px;
+  }
+  .card-top {
+    position: relative;
+    padding: 20px 25px;
+    .card-line-1 {
+      line-height: 32px;
+      color: @font-primary-color;
+      font-size: @font-16;
+    }
+    .card-line-2 {
+      color: @font-secondary-color;
+      font-size: @font-14;
+    }
+  }
+  .card-bottom {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    color: @link-primary-color;
+    font-size: @font-14;
+  }
+}

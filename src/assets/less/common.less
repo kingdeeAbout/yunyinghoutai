@@ -1,0 +1,291 @@
+@import "./color";
+// 清除浮动
+.clearfloat {
+  overflow: auto;
+  zoom: 1;
+}
+
+.fr {
+  float: right;
+}
+
+// iconfont 通用css
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: -4px 6px 0 -2px;
+  vertical-align: middle;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+// 鼠标手势
+.pointor {
+  cursor: pointer;
+}
+
+// 边框
+.border {
+  border: solid 1px @border-color;
+}
+
+.border-left {
+  border-left: solid 1px @border-color;
+}
+
+.border-right {
+  border-right: solid 1px @border-color;
+}
+
+.border-top {
+  border-top: solid 1px @border-color;
+}
+
+.border-bottom {
+  border-bottom: solid 1px @border-color;
+}
+
+// padding
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml24 {
+  margin-left: 24px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt35 {
+  margin-top: 35px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.p15 {
+  padding: 15px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.p30 {
+  padding: 30px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+}
+
+// container
+.container-fluid {
+  .ant-row > div {
+    padding: 0 10px 10px;
+  }
+  .panel {
+    background-color: @panel-color;
+    box-shadow: 0 1px 2px @card-shadow-color;
+  }
+}
+
+.highcharts-container.center-block {
+  margin: 0 auto;
+}
+
+/* 响应式隐藏元素 */
+/* 超大屏幕 ：大于等于1600px*/
+@media (min-width: 1600px) {
+  .hidden-xxl {
+    display: none !important;
+  }
+  .visible-xl {
+    display: none !important;
+  }
+  .visible-lg {
+    display: none !important;
+  }
+  .visible-md {
+    display: none !important;
+  }
+  .visible-sm {
+    display: none !important;
+  }
+  .visible-xs {
+    display: none !important;
+  }
+}
+
+/* 大屏幕 ：大于等于1200px*/
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .hidden-xl {
+    display: none !important;
+  }
+  .visible-xxl {
+    display: none !important;
+  }
+  .visible-lg {
+    display: none !important;
+  }
+  .visible-md {
+    display: none !important;
+  }
+  .visible-sm {
+    display: none !important;
+  }
+  .visible-xs {
+    display: none !important;
+  }
+}
+
+/*默认*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-lg {
+    display: none !important;
+  }
+  .visible-xxl {
+    display: none !important;
+  }
+  .visible-xl {
+    display: none !important;
+  }
+  .visible-md {
+    display: none !important;
+  }
+  .visible-sm {
+    display: none !important;
+  }
+  .visible-xs {
+    display: none !important;
+  }
+}
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-md {
+    display: none !important;
+  }
+  .visible-xxl {
+    display: none !important;
+  }
+  .visible-xl {
+    display: none !important;
+  }
+  .visible-lg {
+    display: none !important;
+  }
+  .visible-sm {
+    display: none !important;
+  }
+  .visible-xs {
+    display: none !important;
+  }
+}
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hidden-sm {
+    display: none !important;
+  }
+  .visible-xxl {
+    display: none !important;
+  }
+  .visible-xl {
+    display: none !important;
+  }
+  .visible-lg {
+    display: none !important;
+  }
+  .visible-md {
+    display: none !important;
+  }
+  .visible-xs {
+    display: none !important;
+  }
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {
+  .hidden-xs {
+    display: none !important;
+  }
+  .visible-xxl {
+    display: none !important;
+  }
+  .visible-xl {
+    display: none !important;
+  }
+  .visible-lg {
+    display: none !important;
+  }
+  .visible-md {
+    display: none !important;
+  }
+  .visible-sm {
+    display: none !important;
+  }
+}

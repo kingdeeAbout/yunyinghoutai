@@ -1,0 +1,51 @@
+@import "../../assets/less/color";
+
+.tab-box {
+    display: flex;
+    padding: 0;
+    .tab-item {
+        flex: 1;
+        padding-left: 35px;
+        list-style: none;
+        border-top: 3px solid @noborder-color;
+        &.active {
+            border-top: solid 3px @active-color;
+        }
+        .item-num {
+            margin: 20px 0 10px;
+            font-size: @font-24;
+            color: @font-primary-color;
+        }
+        .item-title {
+            font-size: @font-16;
+            color: @font-primary-color;
+        }
+        .item-vs {
+            margin-bottom: 10px;
+            font-size: @font-14;
+            color: @font-secondary-color;
+
+            .item-vs{
+                margin-right: 5px;
+                &.red {
+                    color: @red;
+                }
+                &.blue {
+                    color: @blue;
+                }
+                &.green {
+                    color: @green;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tabbox {
+        .tabitem {
+            display: block;
+            width: 50%;
+        }
+    }
+}

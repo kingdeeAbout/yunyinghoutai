@@ -1,0 +1,103 @@
+@import "../../../assets/less/color";
+
+.ant-tabs {
+  overflow: visible;
+}
+
+.form-wrapper {
+  display: flex;
+  position: relative;
+  padding: 20px 25px 20px 28px;
+  margin: 5px 0 10px;
+  background-color: @card-color;
+  border-left: 5px solid @noborder-color;
+  box-shadow: 0 1px 2px @card-shadow-color;
+  cursor: pointer;
+
+  .form-left {
+    flex: 1;
+    margin-right: 10px;
+
+    .form-title {
+      line-height: 32px;
+      color: @font-primary-color;
+      font-size: @font-16;
+    }
+    .form-subtitle{
+      color: @font-secondary-color;
+      font-size: @font-14;
+    }
+  }
+  .form-right {
+    text-align: right;
+
+    input {
+      text-align: right;
+      font-size: @font-16;
+      color: @font-desc-color;
+      border: 1px solid @noborder-color;
+      border-radius: 0;
+
+      &::-webkit-input-placeholder{
+        color: @input-placeholder-color;
+      }
+      &::-moz-placeholder{
+        color: @input-placeholder-color;
+      }
+      &:-moz-placeholder{
+        color: @input-placeholder-color;
+      }
+      &:-ms-input-placeholder{
+        color: @input-placeholder-color;
+      }
+    }
+  }
+  &.active {
+    border-left: solid 5px @active-color;
+
+    .form-right {
+      input {
+        border-bottom: 1px solid @input-border-color;
+      }
+
+      .ant-select-selection {
+        border: 1px solid @input-border-color;
+      }
+      .ant-cascader-input {
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.add-form {
+  .ant-form-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .ant-row > div {
+    padding: 0;
+  }
+
+  .ant-cascader-input {
+    padding-right: 30px;
+  }
+  .ant-cascader-picker-label {
+    font-size: @font-16;
+    color: @font-desc-color;
+  }
+
+  .ant-select-selection {
+    font-size: @font-16;
+    color: @font-desc-color;
+    border: 1px solid @noborder-color;
+  }
+  .ant-btn-primary {
+    margin-top: 50px;
+
+    &.ant-btn-lg {
+      width: 160px;
+      height: 50px;
+    }
+  }
+}

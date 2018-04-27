@@ -1,0 +1,70 @@
+@import "../../assets/less/color";
+
+.basic-wrapper {
+    .basic-title {
+        font-size: @font-16;
+        line-height: 18px;
+        color: @font-primary-color;
+        padding: 20px;
+    }
+
+    .basic-info {
+        font-size: @font-16;
+        line-height: 20px;
+        color: @font-primary-color;
+        position: relative;
+        margin: 10px 20px;
+        .basic-info-name {
+            display: inline-block;
+        }
+        .basic-info-task {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .basic-mobile {
+        font-size: @font-16;
+        line-height: 20px;
+        color: @font-primary-color;
+        margin: 0 20px 10px 20px;
+    }
+
+    .basic-address {
+        font-size: @font-14;
+        line-height: 20px;
+        color: @font-secondary-color;
+        margin: 0 20px 10px 20px;
+    }
+
+    .basic-logo {
+        margin: 30px 20px 20px 20px;
+        img {
+            margin: 0 10px 10px 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 14px;
+        }
+    }
+
+    .basic-operate {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 20px;
+        padding: 20px 0;
+        font-size: @font-14;
+        color: @font-desc-color;
+        .basic-operate-memo {
+            flex: 1;
+            white-space: nowrap;
+        }
+        .basic-operate-split {
+            margin: 0 20px;
+            width: 0;
+            height: 30px;
+            border-right: 1px solid @border-color;
+        }
+    }
+}

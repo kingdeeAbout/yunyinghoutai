@@ -1,0 +1,48 @@
+@import "../../assets/less/color";
+
+.express-list-wrapper {
+  .left {
+    .operator {
+      margin: 0 10px 0 10px;
+      padding: 2px 12px 2px 12px;
+      font-size: @font-14;
+      font-family: "Microsoft YaHei";
+      text-align: center;
+    }
+    .my-ant-radio {
+      .ant-radio-group {
+        .ant-radio-button-wrapper {
+          margin-left: 15px;
+        }
+      }
+    }
+    //.active {
+    //  color: @btn-primary-color;
+    //  background-color: #377EF3;
+    //  border-radius: 5px;
+    //}
+  }
+  .right {
+    .tranportTime {
+      height: 105px;
+    }
+    .ant-steps-item {
+      height: 105px;
+    }
+  }
+  .transport-status-wrapper {
+    //padding: 20px;
+    .basic-title {
+      font-size: @font-16;
+      line-height: 18px;
+      color: @font-primary-color;
+      padding: 20px;
+    }
+    .ant-steps-item-finish > .ant-steps-item-tail:after {
+      background-color: #e8e8e8;
+    }
+    .ant-steps-item-custom .ant-steps-item-icon > .ant-steps-icon {
+      width: 24px;
+    }
+  }
+}

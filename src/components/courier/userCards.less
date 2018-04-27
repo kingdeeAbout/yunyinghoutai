@@ -1,0 +1,61 @@
+@import "../../assets/less/color";
+
+.re-ant-table-wrapper {
+  table {
+    border-collapse:separate;
+    border-spacing: 0 10px;
+
+    .ant-table-thead th{
+      padding: 12px 10px;
+      font-size: @font-14;
+      line-height: 14px;
+      color: @font-secondary-color;
+
+      &:first-child{
+        padding-left: 25px;
+      }
+    }
+
+    .ant-table-tbody {
+      .ant-table-row {
+        td {
+          padding: 22px 10px;
+          &:first-child{
+            padding-left: 20px;
+            border-left: 5px solid @noborder-color;
+          }
+          .top {
+            color: @font-primary-color;
+            font-size: @font-16;
+            line-height: 22px;
+            img {
+              margin: 0 10px 0 0;
+              width: 28px;
+              height: 28px;
+              border-radius: 14px;
+            }
+          }
+          .bottom {
+            color: @font-secondary-color;
+            font-size: @font-14;
+          }
+          .detail {
+            color: @font-desc-color;
+          }
+        }
+
+        &:hover {
+          td:first-child {
+            border-left-color: @lightest-blue;
+          }
+        }
+
+        &.active {
+          td:first-child{
+            border-left:5px solid @active-color;
+          }
+        }
+      }
+    }
+  }
+}

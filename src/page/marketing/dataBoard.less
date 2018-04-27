@@ -1,0 +1,34 @@
+@import "../../assets/less/color";
+
+.data-board {
+  .flex-box {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    .box-item {
+      flex-grow: 1;
+      .box-item-num {
+        font-size: @font-24;
+        color: @font-primary-color;
+      }
+      .box-item-title {
+        font-size: @font-14;
+        color: @font-secondary-color;
+      }
+      .box-item-num-long {
+        font-size: @font-14;
+        color: @font-secondary-color;
+      }
+    }
+    .item-left-title {
+      font-size: @font-16;
+      color: @font-primary-color;
+    }
+    .item-right-title {
+      text-align: right;
+      font-size: @font-14;
+      color: @font-secondary-color;
+    }
+  }
+}
+
+

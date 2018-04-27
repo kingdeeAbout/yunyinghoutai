@@ -1,0 +1,29 @@
+@import "../assets/less/color";
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+  padding: 8px 0 8px 40px;
+}
+
+.ant-table-thead > tr > th {
+  padding-top: 24px;
+  color: @font-secondary-color;
+  background: @panel-color;
+  border-bottom: none;
+}
+
+.ant-table-tbody {
+  .ant-table-row {
+    background-color: @white;
+
+    td {
+      color: @font-primary-color;
+      border-bottom: none;
+    }
+  }
+}
+
+.ant-table-pagination.ant-pagination {
+  margin: 16px auto;
+  float: none;
+  text-align: center;
+}

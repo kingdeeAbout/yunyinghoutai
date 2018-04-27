@@ -1,0 +1,77 @@
+@import "../assets/less/common";
+@import "../assets/less/color";
+
+.sider {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: @main-color;
+  border-right: 1px solid @border-color;
+
+  .img-menu {
+    margin-top: 22px;
+    margin-bottom: 100px;
+    margin-left: 38px;
+  }
+
+  .menu {
+    border-right: none;
+    background-color: @main-color;
+  }
+
+  .ant-menu-inline {
+    .ant-menu-submenu-title {
+      padding: 0 10px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+    }
+    .ant-menu-item,
+    .ant-menu-item:not(:last-child) {
+      margin: 0 0 0 12px;
+    }
+    .ant-menu-submenu-title span {
+      font-size: @font-16;
+    }
+    .ant-menu-submenu-title .ant-menu-submenu-arrow {
+      display: none;
+    }
+    .ant-menu-item,
+    .ant-menu-submenu-title {
+      font-size: @font-16;
+    }
+    .ant-menu-item:after {
+      border-right: none;
+    }
+  }
+
+  .ant-menu-submenu > .ant-menu {
+    background-color: @main-color;
+  }
+
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+  .ant-menu-item:active, .ant-menu-submenu-title:active {
+    background: none;
+  }
+
+  .ant-menu {
+    color: @menu-title-color;
+  }
+
+  .ant-menu-item > a {
+    color: @menu-child-color;
+  }
+
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected > a,
+  .ant-menu-submenu-title:active > a ,
+  .ant-menu-item-active > a{
+    color: @menu-active-color;
+  }
+
+  &.ant-layout-sider-below {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+}
+

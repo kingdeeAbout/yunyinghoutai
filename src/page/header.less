@@ -1,0 +1,27 @@
+@import "../assets/less/common";
+@import "../assets/less/color";
+
+.header {
+  .header-left {
+    float: left;
+    font-size: @font-24;
+    color: @font-primary-color;
+  }
+  .header-right {
+    float: right;
+    .login-name {
+      padding-right: 10px;
+      line-height: 36px;
+      font-size: @font-16;
+      color: @font-primary-color;
+    }
+    // 徽标样式覆盖
+    .ant-badge-count {
+      height: 16px;
+      min-width: 16px;
+      line-height: 16px;
+      border-radius: 8px;
+      padding: 0;
+    }
+  }
+}

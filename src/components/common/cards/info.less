@@ -1,0 +1,116 @@
+@import "../../../assets/less/color";
+
+.sale-manage-basic-wrapper {
+  padding: 20px;
+
+  .basic-info {
+    position: relative;
+    margin-bottom: 10px;
+
+    .basic-info-work {
+      display: inline-block;
+      .basic-info-name {
+        display: inline-block;
+        font-size: @font-32;
+        line-height: 32px;
+        color:@font-primary-color;
+
+        .basic-info-subname {
+          font-size: @font-16;
+        }
+      }
+      .basic-info-post {
+        font-size: @font-14;
+        line-height: 14px;
+        color:@font-primary-color;
+      }
+    }
+    .basic-info-modify {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: @font-14;
+      line-height: @font-14;
+      color: @font-desc-color;
+    }
+  }
+
+  .basic-mobile {
+    font-size: @font-16;
+    line-height: 16px;
+    color: @font-primary-color;
+    margin: 30px 0 10px;
+  }
+
+  .basic-address {
+    font-size: @font-14;
+    line-height: 14px;
+    color: @font-secondary-color;
+    margin: 30px 0 10px;
+  }
+
+  .basic-heap {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .basic-heap-l {
+      flex: 1;
+      white-space: nowrap;
+
+      .basic-heap-num {
+        font-size: @font-32;
+        color: @font-desc-color;
+      }
+      .basic-heap-text {
+        padding-left: 10px;
+        font-size: @font-14;
+        color: @font-secondary-color;
+      }
+    }
+  }
+
+  .basic-operate {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: @font-14;
+    color: @font-desc-color;
+    .basic-operate-memo {
+      flex: 1;
+      white-space: nowrap;
+    }
+    .basic-operate-split {
+      margin: 0 20px;
+      width: 0;
+      height: 30px;
+      border-right: 1px solid @border-color;
+    }
+  }
+}
+
+.ant-modal-wrap {
+  .ant-modal-title {
+    color: @font-desc-color;
+  }
+  .form-wrapper {
+    padding: 10px 15px 10px 14px;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+
+    &.active {
+      border-left: none;
+    }
+    .form-left .form-title {
+      color: @font-secondary-color;
+    }
+    .form-right input,div{
+      padding: 0;
+      width: 188px;
+      text-align: left;
+    }
+  }
+}

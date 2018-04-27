@@ -1,0 +1,59 @@
+@import "../../assets/less/color";
+
+.user-list-wrapper {
+  .user-list-tab {
+    position: relative;
+    .user-list-tab-r {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+    }
+  }
+  .card-operate {
+    position: relative;
+    .card-operate-search {
+      display: inline-block;
+    }
+    .card-operate-sort {
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      .sort-bool {
+        margin-left: 20px;
+        display: inline-block;
+        font-size: @font-14;
+        color: @font-secondary-color;
+
+        img{
+          margin-right: 6px;
+        }
+
+        .active{
+          color: @active-color;
+        }
+      }
+    }
+  }
+
+  .user-panel-title {
+    padding: 20px;
+    font-size: @font-16;
+    line-height: 18px;
+    color: @font-primary-color;
+  }
+  .user-range {
+    .user-range-map {
+      padding-bottom: 20px;
+      margin: 0 20px;
+    }
+  }
+}
+
+.user-list-tab-tooltip {
+  .ant-tooltip-arrow {
+    border-top-color: @primary-color;
+  }
+  .ant-tooltip-inner {
+    background-color: @primary-color;
+  }
+}

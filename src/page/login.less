@@ -1,0 +1,42 @@
+@import "../assets/less/color.less";
+
+.ant-layout, .ant-layout-header {
+  background: @main-color;
+}
+
+.login {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 380px;
+
+  .header {
+    margin: 90px 0 60px;
+    padding: 0;
+
+    img {
+      padding-right: 20px;
+      width: 40%;
+    }
+    .title {
+      display: inline-block;
+      padding-left: 20px;
+      height: 44px;
+      line-height: 44px;
+      font-size: @font-26;
+      border-left: 3px solid @border-color;
+    }
+  }
+
+  .login-form {
+    .ant-form-item {
+      margin-bottom: 15px;
+    }
+    .valid-button{
+      width: 100%;
+      color: @font-primary-color;
+    }
+    .login-form-button {
+      width: 100%;
+    }
+  }
+}

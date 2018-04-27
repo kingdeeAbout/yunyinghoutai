@@ -1,0 +1,138 @@
+[
+  {
+    "key": "100",
+    "index": "1",
+    "xlinkHrefActive": "#icon-operate-active",
+    "xlinkHref": "#icon-operate",
+    "title": "运营数据",
+    "menuItems": [
+      {
+        "key": "100001",
+        "link": "/page/operating/dataProfiling",
+        "title": "数据概览"
+      },
+      {
+        "key": "100002",
+        "link": "/page/courier/userList",
+        "title": "用户列表"
+      }
+    ]
+  },
+  {
+    "key": "200",
+    "index": "2",
+    "xlinkHrefActive": "#icon-order-active",
+    "xlinkHref": "#icon-order",
+    "title": "订单管理",
+    "menuItems": [
+      {
+        "key": "200001",
+        "link": "/page/orderManagment/expressList",
+        "title": "快递单查询"
+      }
+    ]
+  },
+  {
+    "key": "300",
+    "index": "3",
+    "xlinkHrefActive": "#icon-project-active",
+    "xlinkHref": "#icon-project",
+    "title": "项目管理",
+    "menuItems": [
+      {
+        "key": "300001",
+        "link": "/page/cooperation/projectList",
+        "title": "项目列表"
+      },
+      {
+        "key": "300002",
+        "link": "/page/cooperation/addProject",
+        "title": "添加项目"
+      },
+      {
+        "key": "300003",
+        "link": "/page/cooperation/projectList",
+        "title": "运营数据"
+      },
+      {
+        "key": "300004",
+        "link": "/page/cooperation/addManager",
+        "title": "添加管理员"
+      },
+      {
+        "key": "300005",
+        "link": "/page/courier/userList",
+        "title": "用户列表"
+      }
+    ]
+  },
+  {
+    "key": "400",
+    "index": "4",
+    "xlinkHrefActive": "#icon-market-active",
+    "xlinkHref": "#icon-market",
+    "title": "销售管理",
+    "menuItems": [
+      {
+        "key": "400001",
+        "link": "/page/marketing/salesBoard",
+        "title": "销售看板"
+      },
+      {
+        "key": "400002",
+        "link": "/page/marketing/addSales",
+        "title": "添加销售"
+      },
+      {
+        "key": "400003",
+        "link": "/page/marketing/dataBoard",
+        "title": "数据看板"
+      },
+      {
+        "key": "400004",
+        "link": "/page/courier/userList",
+        "title": "用户列表"
+      }
+    ]
+  },
+  {
+    "key": "500",
+    "index": "5",
+    "xlinkHrefActive": "#icon-income-active",
+    "xlinkHref": "#icon-income",
+    "title": "收支管理",
+    "menuItems": []
+  },
+  {
+    "key": "600",
+    "index": "6",
+    "xlinkHrefActive": "#icon-user-active",
+    "xlinkHref": "#icon-user",
+    "title": "用户管理",
+    "menuItems": []
+  },
+  {
+    "key": "700",
+    "index": "7",
+    "xlinkHrefActive": "#icon-material-active",
+    "xlinkHref": "#icon-material",
+    "title": "物料商城",
+    "menuItems": []
+  },
+  {
+    "key": "800",
+    "index": "8",
+    "xlinkHrefActive": "#icon-college-active",
+    "xlinkHref": "#icon-college",
+    "title": "快递学院",
+    "menuItems": []
+  },
+  {
+    "key": "900",
+    "index": "9",
+    "xlinkHrefActive": "#icon-service-active",
+    "xlinkHref": "#icon-service",
+    "title": "客服管理",
+    "menuItems": []
+  }
+]
